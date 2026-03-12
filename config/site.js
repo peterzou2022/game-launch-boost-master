@@ -10,6 +10,14 @@ const SUPPORTED_LOCALES = {
     titleSuffix: "- Game Launch Boost",
     isDefault: true,
   },
+  zh: {
+    name: "简体中文",
+    localeName: "简体中文",
+    ogLocale: "zh_CN",
+    htmlLang: "zh",
+    titleSuffix: "- Game Launch Boost",
+    // isDefault: true,
+  },
 };
 
 // 获取默认语言配置
@@ -38,17 +46,19 @@ const SITE_CONFIG = {
   title: "Game Launch Boost",
   twitter: "@example",
   siteName: "Game Launch Boost",
-  // 功能开关配置
-  features: {
-    i18n: false, // 是否启用多语言启用后将会读取 SUPPORTED_LOCALES 的默认语言作为网站语言
-    themeSwitch: true, // 是否启用主题切换（与多语言独立，单语言时也可用）
-    defaultTheme: "light", // 默认颜色模式: light 或 dark
-  },
   // Logo 配置
   logo: {
     text: "Game Launch Boost",
     image: "/logo.svg",
     height: 32,
+  },
+  // 主题主色调
+  primaryColor: "#81c869",
+  // 功能开关配置
+  features: {
+    i18n: true, // 是否启用多语言启用后将会读取 SUPPORTED_LOCALES 的默认语言作为网站语言
+    themeSwitch: true, // 是否启用主题切换
+    defaultTheme: "light", // 默认颜色模式: light 或 dark
   },
   // 使用生成的 i18n 配置
   i18nConfig,

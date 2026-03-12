@@ -3,7 +3,7 @@ const {
   SITE_CONFIG,
   SUPPORTED_LOCALES,
   URL_PRIORITIES,
-} = require("./config/site"); // 应该为 site.js 可能因为重命名引入更新导致错误
+} = require("./config/site.js"); // 应该为 site.js 可能因为重命名引入更新导致错误
 
 // 从配置中获取多语言配置
 const SUPPORTED_LANGUAGES = Object.keys(SUPPORTED_LOCALES);
