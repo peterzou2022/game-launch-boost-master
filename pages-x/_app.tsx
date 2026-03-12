@@ -1,8 +1,6 @@
 import type { AppProps } from 'next/app'
-import { ThemeProvider } from 'next-themes'
 import Script from 'next/script';
 import '../theme/src/styles/globals.css';
-import themeConfig from '../theme.config';
 
 // 配置第三方服务的ID
 const GA_MEASUREMENT_ID = 'id'; // Google Analytics ID
@@ -10,24 +8,11 @@ const ADSENSE_ID = 'id';       // Google AdSense ID
 const CLARITY_ID = 'id';       // Microsoft Clarity ID
 
 export default function App({ Component, pageProps }: AppProps) {
-  const themeEnabled = themeConfig.features?.themeSwitch ?? false;
-  const defaultTheme = themeConfig.features?.defaultTheme || 'light';
-
   return (
     <>
+      <Component {...pageProps} />
       {/* 加载 Twemoji 表情库 */}
       <Script src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js" />
-
-      {/* 主题切换提供者组件 */}
-      <ThemeProvider 
-        attribute="class" 
-        defaultTheme={defaultTheme}
-        enableSystem={themeEnabled}
-        forcedTheme={!themeEnabled ? defaultTheme : undefined}
-      >
-        <Component {...pageProps} themeConfig={themeConfig} />
-      </ThemeProvider>
-
       {/* Google AdSense 脚本 */}
       <Script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_ID}`}
         crossOrigin="anonymous" />
@@ -60,7 +45,6 @@ export default function App({ Component, pageProps }: AppProps) {
     `
         }
       </Script>
-
     </>
   )
 } 

@@ -53,14 +53,11 @@ export function Navbar({ meta }: NavbarProps) {
     const primaryColor = themeConfig?.primaryColor || '#81c869'
     const fsRoute = useFSRoute()
     const [isMenuOpen, setIsMenuOpen] = React.useState(false)
+    const [searchQuery, setSearchQuery] = React.useState('')
 
     // 检查主题切换功能是否启用
     const themeEnabled = themeConfig?.features?.themeSwitch ?? false
     const i18nEnabled = themeConfig?.features?.i18n ?? false
-
-    console.log('themeConfig:', themeConfig)
-    console.log('i18nEnabled:', i18nEnabled)
-    console.log('features:', themeConfig?.features)
 
     // 处理菜单配置
     const menuConfig = React.useMemo(() => {
@@ -102,6 +99,13 @@ export function Navbar({ meta }: NavbarProps) {
     }, [isMenuOpen])
 
     // 添加判断激活状态的函数
+    const handleSearchSubmit = (e: React.FormEvent) => {
+        e.preventDefault()
+        if (!searchQuery.trim()) return
+        const base = themeConfig?.features?.i18n ? `/${locale}` : ''
+        router.push(`${base}/games?q=${encodeURIComponent(searchQuery.trim())}`)
+    }
+
     const isMenuItemActive = React.useCallback((item: MenuItem) => {
         if (!asPath) return false;
 
@@ -154,99 +158,71 @@ export function Navbar({ meta }: NavbarProps) {
                             </Link>
                         </div>
 
-                        {/* 桌面端导航菜单 */}
-                        <div className="hidden md:block flex-1 min-w-0">
-                            <div className="scrollbar-hide">
-                                <div className="flex justify-center min-w-max px-4">
-                                    {menuItems.map((item: MenuItem) => {
-                                        const isActive = isMenuItemActive(item);
+                        {/* 右侧区域：搜索框（缩短一半）+ 主题/语言，整体位于页面右上方 */}
+                        <div className="flex-1 flex items-center justify-end min-w-0 gap-2 md:gap-3 pl-4 pr-4 sm:pr-6 lg:pr-8">
+                            {/* 桌面端：右上方搜索框，宽度约为原来一半 */}
+                            <div className="hidden md:block w-full max-w-xs flex-shrink-0">
+                                <form onSubmit={handleSearchSubmit} className="w-full">
+                                    <div className="relative flex items-center bg-[#f5f3ef] dark:bg-gray-700/50 rounded-lg border border-gray-200 dark:border-gray-600 focus-within:ring-2 focus-within:ring-primary-500/30 focus-within:border-primary-500 transition-colors">
+                                        <input
+                                            type="search"
+                                            value={searchQuery}
+                                            onChange={(e) => setSearchQuery(e.target.value)}
+                                            placeholder="SEARCH GAMES"
+                                            className="w-full py-2.5 pl-3 pr-10 bg-transparent text-theme-text-primary placeholder-gray-400 dark:placeholder-gray-500 text-sm font-medium focus:outline-none rounded-lg"
+                                            aria-label="Search games"
+                                        />
+                                        <button
+                                            type="submit"
+                                            className="absolute right-2 p-1.5 text-theme-text-secondary hover:text-primary-500 dark:hover:text-primary-400 transition-colors rounded"
+                                            aria-label="Search"
+                                        >
+                                            <Icon icon="material-symbols:search" className="w-5 h-5" />
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
 
-                                        if (item.type === 'menu' && item.items) {
-                                            const submenuItems = Object.entries(item.items).map(([key, subitem]) => ({
-                                                ...subitem,
-                                                route: subitem.href || `${item.route}/${key}`,
-                                                key
-                                            }))
+                            {/* 移动端：Logo 右侧紧凑搜索框，宽度缩短一半 */}
+                            <div className="md:hidden flex-1 min-w-0 max-w-[50%]">
+                                <form onSubmit={handleSearchSubmit} className="flex">
+                                    <div className="relative w-full flex items-center bg-[#f5f3ef] dark:bg-gray-700/50 rounded-lg border border-gray-200 dark:border-gray-600">
+                                        <input
+                                            type="search"
+                                            value={searchQuery}
+                                            onChange={(e) => setSearchQuery(e.target.value)}
+                                            placeholder="SEARCH GAMES"
+                                            className="w-full py-2 pl-3 pr-9 bg-transparent text-theme-text-primary placeholder-gray-400 text-sm focus:outline-none rounded-lg"
+                                            aria-label="Search games"
+                                        />
+                                        <button type="submit" className="absolute right-1.5 p-1 text-theme-text-secondary">
+                                            <Icon icon="material-symbols:search" className="w-4 h-4" />
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
 
-                                            return (
-                                                <div key={item.route} className="relative group px-1 lg:px-2">
-                                                    <button
-                                                        className={`flex flex-col items-center justify-center h-16 md:h-20 px-2 lg:px-3 border-b-2 ${isActive
-                                                            ? 'border-primary-500 dark:border-primary-400 text-primary-500 dark:text-primary-400 font-medium'
-                                                            : 'border-transparent text-theme-text-secondary hover:text-primary-500 dark:hover:text-primary-400'
-                                                            } transition-colors`}
-                                                    >
-                                                        {item.icon && (
-                                                            <Icon icon={item.icon} className="w-5 h-5 lg:w-6 lg:h-6 mb-1.5" />
-                                                        )}
-                                                        <span className="text-xs lg:text-sm whitespace-nowrap">{item.title}</span>
-                                                    </button>
-                                                    {submenuItems.length > 0 && (
-                                                        <div className="absolute left-1/2 -translate-x-1/2 w-56 mt-0 bg-theme-bg-primary dark:bg-dark-secondary divide-y divide-theme-border rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ring-1 ring-theme-border">
-                                                            <div className="py-1">
-                                                                {submenuItems.map((subitem) => (
-                                                                    <Link
-                                                                        key={subitem.key}
-                                                                        href={subitem.href || subitem.route}
-                                                                        className="flex items-center px-4 py-2.5 text-sm text-theme-text-secondary hover:text-primary-500 dark:hover:text-primary-400"
-                                                                    >
-                                                                        {subitem.icon && (
-                                                                            <Icon icon={subitem.icon} className="w-5 h-5 mr-2.5" />
-                                                                        )}
-                                                                        <span className="whitespace-nowrap">{subitem.title}</span>
-                                                                    </Link>
-                                                                ))}
-                                                            </div>
-                                                        </div>
-                                                    )}
-                                                </div>
-                                            )
-                                        }
-
-                                        return (
-                                            <Link
-                                                key={item.key}
-                                                href={item.href || item.route || ''}
-                                                className={`flex flex-col items-center justify-center h-16 md:h-20 px-2 lg:px-3 mx-1 lg:mx-2 border-b-2 ${isActive
-                                                    ? 'border-primary-500 dark:border-primary-400 text-primary-500 dark:text-primary-400 font-medium'
-                                                    : 'border-transparent text-theme-text-secondary hover:text-primary-500 dark:hover:text-primary-400'
-                                                    } transition-colors`}
-                                            >
-                                                {item.icon && (
-                                                    <Icon icon={item.icon} className={`w-5 h-5 lg:w-6 lg:h-6 mb-1.5`} />
-                                                )}
-                                                <span className="text-xs lg:text-sm whitespace-nowrap">{item.title}</span>
-                                            </Link>
-                                        )
-                                    })}
+                            <div className="flex-shrink-0 flex items-center space-x-2">
+                                {/* 移动端菜单按钮 */}
+                                <div className="md:hidden">
+                                    <button
+                                        onClick={(e) => {
+                                            e.stopPropagation()
+                                            setIsMenuOpen(!isMenuOpen)
+                                        }}
+                                        className="p-2 text-theme-text-secondary hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
+                                    >
+                                        <Icon
+                                            icon={isMenuOpen ? "material-symbols:close" : "material-symbols:menu"}
+                                            className="w-6 h-6"
+                                        />
+                                    </button>
                                 </div>
-                            </div>
-                        </div>
 
-                        {/* 功能区域 */}
-                        <div className="flex-shrink-0 px-4 sm:px-6 lg:px-8 flex items-center">
-                            {/* 移动端菜单按钮 */}
-                            <div className="md:hidden mr-2">
-                                <button
-                                    onClick={(e) => {
-                                        e.stopPropagation()
-                                        setIsMenuOpen(!isMenuOpen)
-                                    }}
-                                    className="p-2 text-theme-text-secondary hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
-                                >
-                                    <Icon
-                                        icon={isMenuOpen ? "material-symbols:close" : "material-symbols:menu"}
-                                        className="w-6 h-6"
-                                    />
-                                </button>
-                            </div>
-
-                            <div className="hidden md:flex items-center space-x-4">
-                                <button className="p-2 text-theme-text-secondary hover:text-primary-500 dark:hover:text-primary-400">
-                                    <Icon icon="material-symbols:search-outline" className="w-6 h-6" />
-                                </button>
-                                {themeEnabled && <ThemeSwitch />}
-                                {i18nEnabled && <LocaleSwitch />}
+                                <div className="hidden md:flex items-center space-x-2">
+                                    {themeEnabled && <ThemeSwitch />}
+                                    {i18nEnabled && <LocaleSwitch />}
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -258,6 +234,24 @@ export function Navbar({ meta }: NavbarProps) {
                             }`}
                     >
                         <div className="w-full overflow-x-auto pb-20">
+                            {/* 移动端搜索框 */}
+                            <div className="px-4 pt-4 pb-2 border-b border-theme-border">
+                                <form onSubmit={handleSearchSubmit} className="flex">
+                                    <div className="relative flex-1 flex items-center bg-[#f5f3ef] dark:bg-gray-700/50 rounded-lg border border-gray-200 dark:border-gray-600">
+                                        <input
+                                            type="search"
+                                            value={searchQuery}
+                                            onChange={(e) => setSearchQuery(e.target.value)}
+                                            placeholder="SEARCH GAMES"
+                                            className="w-full py-2.5 pl-4 pr-11 bg-transparent text-theme-text-primary placeholder-gray-400 text-sm focus:outline-none rounded-lg"
+                                            aria-label="Search games"
+                                        />
+                                        <button type="submit" className="absolute right-2 p-1.5 text-theme-text-secondary">
+                                            <Icon icon="material-symbols:search" className="w-5 h-5" />
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
                             <div className="px-4 py-2 space-y-1">
                                 {menuItems.map((item: MenuItem) => {
                                     const isActive = isMenuItemActive(item);
@@ -313,12 +307,7 @@ export function Navbar({ meta }: NavbarProps) {
                             <div className="fixed bottom-0 left-0 right-0 border-t border-theme-border bg-theme-bg-primary dark:bg-dark-secondary">
                                 <div className="px-4 py-3 flex items-center justify-between">
                                     {i18nEnabled && <LocaleSwitch />}
-                                    <div className="flex space-x-2">
-                                        <button className="p-2 text-theme-text-secondary hover:text-primary-500 dark:hover:text-primary-400">
-                                            <Icon icon="material-symbols:search-outline" className="w-5 h-5" />
-                                        </button>
-                                        {themeEnabled && <ThemeSwitch />}
-                                    </div>
+                                    {themeEnabled && <ThemeSwitch />}
                                 </div>
                             </div>
                         </div>

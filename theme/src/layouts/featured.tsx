@@ -3,6 +3,7 @@ import type { PageMapItem } from 'nextra';
 import { Breadcrumb } from '../components/Breadcrumb';
 import { GameCarousel } from '../components/GameCarousel';
 import { GameFrame } from '../components/GameFrame';
+import { CommentsSection } from '../components/CommentsSection';
 import { useRouter } from 'nextra/hooks';
 import { getGamesByCategory } from '../utils/getGamesByCategory';
 import type { FrontMatter } from '../types';
@@ -85,6 +86,9 @@ export function FeaturedLayout({ children, frontMatter, pageMap }: FeaturedLayou
                         {children}
                     </article>
                 </div>
+
+                {/* 首页底部评论区：供用户整体评价站点或首页推荐 */}
+                <CommentsSection title="Homepage comments" />
             </div>
         </main>
     );

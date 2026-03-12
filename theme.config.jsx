@@ -4,7 +4,7 @@ import {
   SUPPORTED_LOCALES,
   getDefaultLocale,
   URL_PRIORITIES,
-} from "./config/site.js"; // 应该为 site.js 可能因为重命名引入更新导致错误
+} from "./config/site.js";
 
 // 主题配置
 export default {

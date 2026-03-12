@@ -1,8 +1,11 @@
 import React from 'react';
-import { useRouter } from 'nextra/hooks';
+import type { PageMapItem } from 'nextra';
 import { GameFrame } from '../components/GameFrame';
 import { ShareButtons } from '../components/ShareButtons';
 import { Breadcrumb } from '../components/Breadcrumb';
+import { GameDescription } from '../components/GameDescription';
+import { CommentsSection } from '../components/CommentsSection';
+import { RecommendedGames } from '../components/RecommendedGames';
 
 interface DefaultLayoutProps {
     children: React.ReactNode;
@@ -12,9 +15,10 @@ interface DefaultLayoutProps {
         game?: string;
         cover?: string;
     };
+    pageMap?: PageMapItem[];
 }
 
-export function DefaultLayout({ children, frontMatter }: DefaultLayoutProps) {
+export function DefaultLayout({ children, frontMatter, pageMap = [] }: DefaultLayoutProps) {
     const gameUrl = frontMatter.game;
 
     return (
@@ -30,6 +34,9 @@ export function DefaultLayout({ children, frontMatter }: DefaultLayoutProps) {
                         />
                     </div>
                 )}
+
+                {/* 游戏说明组件：展示 frontmatter description，便于模板快速填写 */}
+                <GameDescription description={frontMatter.description} title="游戏说明" />
 
                 {/* 文章内容区域 */}
                 <div className="bg-white dark:bg-[#242424] rounded-xl shadow-sm">
@@ -67,6 +74,12 @@ export function DefaultLayout({ children, frontMatter }: DefaultLayoutProps) {
                         </article>
                     </div>
                 </div>
+
+                {/* 评论区域：展示玩家评论，位于游戏介绍下方 */}
+                <CommentsSection title="Comment" />
+
+                {/* 推荐游戏：同分类下的其他游戏 */}
+                <RecommendedGames pageMap={pageMap} title="推荐游戏" />
             </div>
         </main>
     );

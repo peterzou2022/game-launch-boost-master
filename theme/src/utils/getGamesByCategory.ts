@@ -83,10 +83,6 @@ export function getGamesInCurrentDirectory(pageMap: PageMapItem[], currentPath: 
                     item.children.forEach(child => {
                         if (isMdxFile(child) && child.name !== 'index') {
                             const { frontMatter = {} } = child;
-                            console.log('Adding game:', {
-                                title: frontMatter.title,
-                                slug: child.route
-                            });
                             games.push({
                                 ...frontMatter,
                                 slug: child.route
@@ -101,9 +97,32 @@ export function getGamesInCurrentDirectory(pageMap: PageMapItem[], currentPath: 
     };
 
     traverse(pageMap);
-    // console.log('Found games:', games.length);
-    // console.log('Games:', games);
-    // console.log('=== End Debug ===');
-    
     return games;
+}
+
+/** 从当前页面路径推导分类路径，如 /en/games/fighting/xxx -> games/fighting */
+export function getCategoryFromRoute(route: string, locale: string, i18nEnabled: boolean): string | null {
+    const normalized = route.replace(/\/$/, '');
+    const withoutLocale = i18nEnabled ? normalized.replace(new RegExp(`^/${locale}`), '') : normalized;
+    const match = withoutLocale.match(/^\/games\/(.+)/);
+    if (!match) return null;
+    const segments = match[1].split('/').filter(Boolean);
+    if (segments.length <= 1) return `games/${segments[0]}`;
+    const parentPath = segments.slice(0, -1).join('/');
+    return `games/${parentPath}`;
+}
+
+/** 获取推荐游戏：同分类下的其他游戏，排除当前页，最多返回 limit 个 */
+export function getRecommendedGames(
+    pageMap: PageMapItem[],
+    currentRoute: string,
+    locale: string,
+    limit: number = 8
+): FrontMatter[] {
+    const i18nEnabled = themeConfig.features?.i18n;
+    const category = getCategoryFromRoute(currentRoute, locale, !!i18nEnabled);
+    if (!category) return [];
+    const all = getGamesByCategory(pageMap, category, locale);
+    const filtered = all.filter((g) => (g.slug || '').replace(/\/$/, '') !== currentRoute.replace(/\/$/, ''));
+    return filtered.slice(0, limit);
 }
