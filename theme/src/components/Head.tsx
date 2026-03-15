@@ -55,12 +55,13 @@ export function Head({ frontMatter, pageMap }: HeadProps): ReactElement {
         return {}
     }, [pageMap])
     
-    // 生成页面标题
+    // 生成页面标题（首页不追加 suffix，避免重复关键词且超过 60 字被截断）
     const pageTitle = useMemo(() => {
         const baseTitle = frontMatter?.title || meta?.title || themeConfig?.title || ''
-        const suffix = i18nEnabled && currentLocaleConfig?.titleSuffix ? currentLocaleConfig.titleSuffix : ''
+        const isHomepage = cleanPath === '/' || cleanPath === `/${locale}` || cleanPath === ''
+        const suffix = i18nEnabled && currentLocaleConfig?.titleSuffix && !isHomepage ? currentLocaleConfig.titleSuffix : ''
         return `${baseTitle}${suffix}`
-    }, [frontMatter?.title, meta?.title, themeConfig?.title, i18nEnabled, currentLocaleConfig])
+    }, [frontMatter?.title, meta?.title, themeConfig?.title, i18nEnabled, currentLocaleConfig, cleanPath, locale])
 
     const pageDescription = frontMatter?.description || meta?.description || themeConfig.description
     const ogImage = frontMatter?.cover || frontMatter?.icon || '/og-image.jpg'

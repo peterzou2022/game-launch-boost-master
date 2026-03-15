@@ -7,7 +7,7 @@ const SUPPORTED_LOCALES = {
     localeName: "English",
     ogLocale: "en_US",
     htmlLang: "en",
-    titleSuffix: "- Game Launch Boost",
+    titleSuffix: "- Reaction Time Test",
     isDefault: true,
   },
   zh: {
@@ -15,8 +15,7 @@ const SUPPORTED_LOCALES = {
     localeName: "简体中文",
     ogLocale: "zh_CN",
     htmlLang: "zh",
-    titleSuffix: "- Game Launch Boost",
-    // isDefault: true,
+    titleSuffix: "- 反应时间测试",
   },
 };
 
@@ -43,12 +42,12 @@ const i18nConfig = {
 // 网站基础配置
 const SITE_CONFIG = {
   url: "https://example.com",
-  title: "Game Launch Boost",
+  title: "Reaction Time Test",
   twitter: "@example",
-  siteName: "Game Launch Boost",
+  siteName: "Reaction Time Test",
   // Logo 配置
   logo: {
-    text: "Game Launch Boost",
+    text: "Reaction Time Test",
     image: "/logo.svg",
     height: 32,
   },

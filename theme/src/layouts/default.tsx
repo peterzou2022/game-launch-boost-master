@@ -79,7 +79,7 @@ export function DefaultLayout({ children, frontMatter, pageMap = [] }: DefaultLa
                 <CommentsSection title="Comment" />
 
                 {/* 推荐游戏：同分类下的其他游戏 */}
-                <RecommendedGames pageMap={pageMap} title="推荐游戏" />
+                <RecommendedGames pageMap={pageMap} title="Recommended Games" />
             </div>
         </main>
     );

@@ -16,7 +16,7 @@ interface RecommendedGamesProps {
 /**
  * 推荐游戏组件：展示当前游戏同分类下的其他游戏，便于模板使用者直接使用。
  */
-export function RecommendedGames({ pageMap, title = '推荐游戏', limit = RECOMMENDED_LIMIT }: RecommendedGamesProps) {
+export function RecommendedGames({ pageMap, title = 'Recommended Games', limit = RECOMMENDED_LIMIT }: RecommendedGamesProps) {
     const router = useRouter();
     const { asPath, locale = 'en' } = router;
     const games = React.useMemo(
