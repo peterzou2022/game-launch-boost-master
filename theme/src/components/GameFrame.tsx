@@ -7,6 +7,9 @@ interface GameFrameProps {
     cover?: string;
 }
 
+const getCoverAlt = (title: string) =>
+    /reaction/i.test(title) ? `${title} - reaction time test game cover` : `${title} - game cover`;
+
 export function GameFrame({ src, title, cover }: GameFrameProps) {
     const [key, setKey] = React.useState(0);
     const [isFullscreen, setIsFullscreen] = React.useState(false);
@@ -62,7 +65,7 @@ export function GameFrame({ src, title, cover }: GameFrameProps) {
                         {cover ? (
                             <img
                                 src={cover}
-                                alt={`${title} cover`}
+                                alt={getCoverAlt(title)}
                                 className="absolute inset-0 w-full h-full object-cover"
                             />
                         ) : (
@@ -101,7 +104,7 @@ export function GameFrame({ src, title, cover }: GameFrameProps) {
             <div className="flex items-center justify-between px-4 py-3 border-t border-theme-border">
                 <div className="flex items-center gap-2">
                     {cover && (
-                        <img src={cover} alt={`${title} cover`} className="w-8 h-8 rounded-lg object-cover" />
+                        <img src={cover} alt={getCoverAlt(title)} className="w-8 h-8 rounded-lg object-cover" />
                     )}
                     <h2 className="text-base font-medium text-theme-text-primary">{title}</h2>
                 </div>

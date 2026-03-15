@@ -43,7 +43,7 @@ const i18nConfig = {
 const SITE_CONFIG = {
   url: "https://reactiontimetest.best",
   title: "Reaction Time Test",
-  twitter: "@example",
+  twitter: "@ShanHai_AI",
   siteName: "Reaction Time Test",
   // Logo 配置
   logo: {

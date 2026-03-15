@@ -28,6 +28,7 @@ function findUrlConfig(path) {
 const defaultConfig = {
   siteUrl: SITE_CONFIG.url,
   generateRobotsTxt: true,
+  output: "static", // 适配 Next.js output: "export"，将 sitemap 写入 out/ 目录
   changefreq: "weekly",
   exclude: ["*/404", "*/500", "*/404.html", "*/500.html"],
   robotsTxtOptions: {
@@ -55,6 +56,7 @@ const defaultConfig = {
 // 为启用多语言的情况创建配置
 const i18nConfig = {
   ...defaultConfig,
+  output: "static", // 确保多语言模式下也写入 out/
   transform: async (config, path) => {
     path = path.replace(/\/+/g, "/");
     const cleanPath = path.replace(/^\//, "");
@@ -91,5 +93,6 @@ const i18nConfig = {
   },
 };
 
-// 根据是否启用多语言选择配置
-module.exports = SITE_CONFIG.features.i18n ? i18nConfig : defaultConfig;
+// Next.js i18n 构建已为 /en/*、/zh/* 生成独立路径，next-sitemap 会直接收到这些路径。
+// 使用 defaultConfig 即可，无需自定义 transform 重复生成（否则会产生 en/zh、zh/zh 等错误 URL）。
+module.exports = defaultConfig;

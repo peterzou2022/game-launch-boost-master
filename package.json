@@ -6,7 +6,7 @@
     "build": "next build",
     "pages:build": "npx @cloudflare/next-on-pages",
     "start": "next start",
-    "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap && node scripts/copy-sitemap-to-out.js"
   },
   "dependencies": {
     "@iconify/react": "^5.1.0",

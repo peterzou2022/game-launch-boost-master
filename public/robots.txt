@@ -5,7 +5,7 @@ Disallow: /404
 Disallow: /500
 
 # Host
-Host: https://example.com
+Host: https://reactiontimetest.best
 
 # Sitemaps
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://reactiontimetest.best/sitemap.xml
