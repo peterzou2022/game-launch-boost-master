@@ -41,7 +41,7 @@ const i18nConfig = {
 
 // 网站基础配置
 const SITE_CONFIG = {
-  url: "https://example.com",
+  url: "https://reactiontimetest.best",
   title: "Reaction Time Test",
   twitter: "@example",
   siteName: "Reaction Time Test",
