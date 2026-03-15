@@ -82,8 +82,21 @@ export function Head({ frontMatter, pageMap }: HeadProps): ReactElement {
 
     return (
         <NextHead>
+            {/* Google tag (gtag.js) */}
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9THH2Q7H5" />
+            <script
+                dangerouslySetInnerHTML={{
+                    __html: `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-H9THH2Q7H5');
+`,
+                }}
+            />
             <title>{pageTitle}</title>
             <meta name="description" content={pageDescription} />
+            <meta name="google-site-verification" content="0Ti7IUWnZ0zb3rOjtng_v9vh1K70S56P3kTTsWqNVZ4" />
             {frontMatter?.keywords && <meta name="keywords" content={frontMatter.keywords} />}
 
             {/* HTML Language */}
