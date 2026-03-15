@@ -96,7 +96,6 @@ export function Head({ frontMatter, pageMap }: HeadProps): ReactElement {
             />
             <title>{pageTitle}</title>
             <meta name="description" content={pageDescription} />
-            <meta name="google-site-verification" content="0Ti7IUWnZ0zb3rOjtng_v9vh1K70S56P3kTTsWqNVZ4" />
             {frontMatter?.keywords && <meta name="keywords" content={frontMatter.keywords} />}
 
             {/* HTML Language */}

@@ -1,4 +1,5 @@
 import type { AppProps } from 'next/app'
+import Head from 'next/head'
 import Script from 'next/script';
 import '../theme/src/styles/globals.css';
 
@@ -10,6 +11,9 @@ const CLARITY_ID = 'id';       // Microsoft Clarity ID
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
+      <Head>
+        <meta name="google-site-verification" content="0Ti7IUWnZ0zb3rOjtng_v9vh1K70S56P3kTTsWqNVZ4" />
+      </Head>
       <Component {...pageProps} />
       {/* 加载 Twemoji 表情库 */}
       <Script src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js" />
