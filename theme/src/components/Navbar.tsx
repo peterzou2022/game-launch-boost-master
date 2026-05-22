@@ -3,321 +3,256 @@ import { useRouter } from 'nextra/hooks'
 import Link from 'next/link'
 import { LocaleSwitch } from './LocaleSwitch'
 import { ThemeSwitch } from './ThemeSwitch'
-import { useFSRoute } from 'nextra/hooks'
 import { Icon } from '@iconify/react'
 import { useThemeConfig } from '../contexts'
-import type { PageMapItem } from 'nextra'
 
 type MenuItem = {
-    title: string
-    type: string
-    icon?: string
-    route?: string
-    href?: string
-    items?: Record<string, MenuItem>
-    key?: string
-}
-
-interface MetaJsonFile {
-    kind: 'Meta'
-    data: Record<string, MenuItem>
+  title: string
+  type: string
+  route?: string
+  href?: string
+  items?: Record<string, MenuItem>
+  key?: string
 }
 
 interface NavbarProps {
-    meta?: any
+  meta?: any
+  collapsed: boolean
+  onToggle: () => void
 }
 
-// 添加 Logo 配置类型
-interface LogoConfig {
-    text: string;
-    image: string;
-    height: number;
-}
-
-// 扩展主题配置类型
 interface ThemeConfig {
-    features?: {
-        i18n?: boolean;
-        themeSwitch?: boolean;
-    };
-    siteName?: string;
-    logo?: LogoConfig;
-    primaryColor?: string;
+  features?: {
+    i18n?: boolean
+    themeSwitch?: boolean
+  }
 }
 
-export function Navbar({ meta }: NavbarProps) {
-    const router = useRouter()
-    const { asPath, locale = 'en' } = router
-    const themeConfig = useThemeConfig() as ThemeConfig
-    const siteName = themeConfig?.siteName
-    const primaryColor = themeConfig?.primaryColor || '#81c869'
-    const fsRoute = useFSRoute()
-    const [isMenuOpen, setIsMenuOpen] = React.useState(false)
-    const [searchQuery, setSearchQuery] = React.useState('')
+const utilityLinks = [
+  { title: 'About Us', href: '#' },
+  { title: 'Contact Us', href: '#' },
+  { title: 'DMCA', href: '#' },
+  { title: 'Privacy Policy', href: '#' },
+  { title: 'Terms of Service', href: '#' }
+]
 
-    // 检查主题切换功能是否启用
-    const themeEnabled = themeConfig?.features?.themeSwitch ?? false
-    const i18nEnabled = themeConfig?.features?.i18n ?? false
+const navIcons: Record<string, string> = {
+  Newest: '🆕',
+  Trending: '🔥',
+  'Top Popular': '📈',
+  'Favorite Games': '❤️'
+}
 
-    // 处理菜单配置
-    const menuConfig = React.useMemo(() => {
-        if (!meta) return {}
-        if (typeof meta === 'function') return meta()
-        return meta
-    }, [meta])
+export function Navbar({ meta, collapsed, onToggle }: NavbarProps) {
+  const router = useRouter()
+  const { asPath, locale = 'en' } = router
+  const themeConfig = useThemeConfig() as ThemeConfig
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false)
+  const [searchQuery, setSearchQuery] = React.useState('')
 
-    // 转换菜单配置为数组形式
-    const menuItems = React.useMemo(() => {
-        return Object.entries(menuConfig).map(([key, item]: [string, any]) => ({
-            ...item,
-            route: item.href || `/${locale}/${key}`,
-            key
-        }))
-    }, [menuConfig, locale])
+  const i18nEnabled = themeConfig?.features?.i18n ?? false
+  const themeEnabled = themeConfig?.features?.themeSwitch ?? false
+  const homeHref = i18nEnabled ? `/${locale}` : '/'
 
-    // 关闭菜单的处理函数
-    const handleCloseMenu = () => {
-        setIsMenuOpen(false)
-    }
+  const menuConfig = React.useMemo(() => {
+    if (!meta) return {}
+    if (typeof meta === 'function') return meta()
+    return meta
+  }, [meta])
 
-    // 点击外部关闭菜单
-    React.useEffect(() => {
-        const handleClickOutside = (event: MouseEvent) => {
-            const nav = document.getElementById('mobile-menu')
-            if (nav && !nav.contains(event.target as Node)) {
-                setIsMenuOpen(false)
-            }
-        }
+  const menuItems = React.useMemo(() => {
+    return Object.entries(menuConfig).map(([key, item]: [string, any]) => ({
+      ...item,
+      route: item.href || `/${locale}/${key}`,
+      key
+    }))
+  }, [menuConfig, locale])
 
-        if (isMenuOpen) {
-            document.addEventListener('click', handleClickOutside)
-        }
+  const categoryMenu = menuItems.find(
+    (item: MenuItem) => item.key === 'categories' && item.type === 'menu'
+  )
+  const categoryItems = categoryMenu?.items
+    ? (Object.entries(categoryMenu.items) as [string, MenuItem][])
+    : []
 
-        return () => {
-            document.removeEventListener('click', handleClickOutside)
-        }
-    }, [isMenuOpen])
+  const primaryNav = React.useMemo(
+    () => [
+      {
+        title: 'Newest',
+        href: homeHref
+      },
+      {
+        title: 'Trending',
+        href: categoryItems[0]?.[1]?.href || homeHref
+      },
+      {
+        title: 'Top Popular',
+        href: categoryItems[1]?.[1]?.href || categoryItems[0]?.[1]?.href || homeHref
+      },
+      {
+        title: 'Favorite Games',
+        href: asPath || homeHref
+      }
+    ],
+    [asPath, categoryItems, homeHref]
+  )
 
-    // 添加判断激活状态的函数
-    const handleSearchSubmit = (e: React.FormEvent) => {
-        e.preventDefault()
-        if (!searchQuery.trim()) return
-        const base = themeConfig?.features?.i18n ? `/${locale}` : ''
-        router.push(`${base}/games?q=${encodeURIComponent(searchQuery.trim())}`)
-    }
+  const handleSearchSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    if (!searchQuery.trim()) return
+    const base = i18nEnabled ? `/${locale}` : ''
+    router.push(`${base}/games?q=${encodeURIComponent(searchQuery.trim())}`)
+    setIsMobileMenuOpen(false)
+  }
 
-    const isMenuItemActive = React.useCallback((item: MenuItem) => {
-        if (!asPath) return false;
+  const isActive = React.useCallback(
+    (href: string) => {
+      const current = (asPath || '').replace(/\/$/, '')
+      const target = href.replace(/\/$/, '')
+      return current === target
+    },
+    [asPath]
+  )
 
-        // 移除语言前缀和尾部斜杠进行比较
-        const currentPath = asPath.replace(new RegExp(`^/${locale}`), '').replace(/\/$/, '');
-        const itemPath = (item.href || item.route || '')
-            .replace(new RegExp(`^/${locale}`), '')
-            .replace(/\/$/, '');
+  const DesktopSidebar = (
+    <aside
+      className={`fixed bottom-0 left-0 top-[61px] z-40 hidden border-r border-[#2c2d43] bg-[#0d0e16] transition-[width] duration-300 lg:block ${
+        collapsed ? 'w-0 overflow-hidden border-r-0' : 'w-[199px]'
+      }`}
+    >
+      <div className="flex h-full flex-col justify-between overflow-y-auto px-[12px] pb-6 pt-[14px]">
+        <div className="space-y-[2px]">
+          {primaryNav.map((item) => (
+            <Link
+              key={item.title}
+              href={item.href}
+              className={`flex items-center gap-[12px] rounded-md px-[6px] py-[9px] text-[15px] font-bold transition-colors ${
+                isActive(item.href)
+                  ? 'text-white'
+                  : 'text-white hover:bg-[#161726]'
+              }`}
+            >
+              <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center text-[18px] leading-none">
+                {navIcons[item.title] || '•'}
+              </span>
+              <span>{item.title}</span>
+            </Link>
+          ))}
+        </div>
 
-        if (item.type === 'page') {
-            // 页面类型需要精确匹配
-            return currentPath === itemPath;
-        } else if (item.type === 'menu') {
-            // 菜单类型检查当前路径是否以菜单路径开头
-            // 同时检查子项是否匹配
-            if (currentPath.startsWith(itemPath)) {
-                return true;
-            }
-            // 检查子项
-            if (item.items) {
-                return Object.entries(item.items).some(([key, subitem]) => {
-                    const subitemPath = (subitem.href || `${itemPath}/${key}`).replace(/\/$/, '');
-                    return currentPath === subitemPath;
-                });
-            }
-        }
-        return false;
-    }, [asPath, locale]);
-
-    return (
-        <>
-            <header className="fixed top-0 left-0 right-0 z-50">
-                <nav className="bg-white/80 dark:bg-dark-secondary/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
-                    <div className="flex h-16 md:h-20 items-center">
-                        {/* Logo 区域 */}
-                        <div className="flex-shrink-0 px-4 sm:px-6 lg:px-8">
-                            <Link
-                                href={themeConfig?.features?.i18n ? `/${locale}` : '/'}
-                                className="flex items-center gap-2"
-                            >
-                                <img 
-                                    src={themeConfig?.logo?.image} 
-                                    alt={themeConfig?.logo?.text} 
-                                    className="w-auto" 
-                                    style={{ height: themeConfig?.logo?.height }} 
-                                />
-                                <span className="text-lg md:text-xl font-bold text-theme-text-primary" style={{ color: primaryColor }}>
-                                    {themeConfig?.logo?.text}
-                                </span>
-                            </Link>
-                        </div>
-
-                        {/* 右侧区域：搜索框（缩短一半）+ 主题/语言，整体位于页面右上方 */}
-                        <div className="flex-1 flex items-center justify-end min-w-0 gap-2 md:gap-3 pl-4 pr-4 sm:pr-6 lg:pr-8">
-                            {/* 桌面端：右上方搜索框，宽度约为原来一半 */}
-                            <div className="hidden md:block w-full max-w-xs flex-shrink-0">
-                                <form onSubmit={handleSearchSubmit} className="w-full">
-                                    <div className="relative flex items-center bg-[#f5f3ef] dark:bg-gray-700/50 rounded-lg border border-gray-200 dark:border-gray-600 focus-within:ring-2 focus-within:ring-primary-500/30 focus-within:border-primary-500 transition-colors">
-                                        <input
-                                            type="search"
-                                            value={searchQuery}
-                                            onChange={(e) => setSearchQuery(e.target.value)}
-                                            placeholder="SEARCH GAMES"
-                                            className="w-full py-2.5 pl-3 pr-10 bg-transparent text-theme-text-primary placeholder-gray-400 dark:placeholder-gray-500 text-sm font-medium focus:outline-none rounded-lg"
-                                            aria-label="Search games"
-                                        />
-                                        <button
-                                            type="submit"
-                                            className="absolute right-2 p-1.5 text-theme-text-secondary hover:text-primary-500 dark:hover:text-primary-400 transition-colors rounded"
-                                            aria-label="Search"
-                                        >
-                                            <Icon icon="material-symbols:search" className="w-5 h-5" />
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-
-                            {/* 移动端：Logo 右侧紧凑搜索框，宽度缩短一半 */}
-                            <div className="md:hidden flex-1 min-w-0 max-w-[50%]">
-                                <form onSubmit={handleSearchSubmit} className="flex">
-                                    <div className="relative w-full flex items-center bg-[#f5f3ef] dark:bg-gray-700/50 rounded-lg border border-gray-200 dark:border-gray-600">
-                                        <input
-                                            type="search"
-                                            value={searchQuery}
-                                            onChange={(e) => setSearchQuery(e.target.value)}
-                                            placeholder="SEARCH GAMES"
-                                            className="w-full py-2 pl-3 pr-9 bg-transparent text-theme-text-primary placeholder-gray-400 text-sm focus:outline-none rounded-lg"
-                                            aria-label="Search games"
-                                        />
-                                        <button type="submit" className="absolute right-1.5 p-1 text-theme-text-secondary">
-                                            <Icon icon="material-symbols:search" className="w-4 h-4" />
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-
-                            <div className="flex-shrink-0 flex items-center space-x-2">
-                                {/* 移动端菜单按钮 */}
-                                <div className="md:hidden">
-                                    <button
-                                        onClick={(e) => {
-                                            e.stopPropagation()
-                                            setIsMenuOpen(!isMenuOpen)
-                                        }}
-                                        className="p-2 text-theme-text-secondary hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
-                                    >
-                                        <Icon
-                                            icon={isMenuOpen ? "material-symbols:close" : "material-symbols:menu"}
-                                            className="w-6 h-6"
-                                        />
-                                    </button>
-                                </div>
-
-                                <div className="hidden md:flex items-center space-x-2">
-                                    {themeEnabled && <ThemeSwitch />}
-                                    {i18nEnabled && <LocaleSwitch />}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* 移动端菜单 */}
-                    <div
-                        id="mobile-menu"
-                        className={`md:hidden fixed inset-x-0 top-16 bottom-0 bg-theme-bg-primary dark:bg-dark transform transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'
-                            }`}
-                    >
-                        <div className="w-full overflow-x-auto pb-20">
-                            {/* 移动端搜索框 */}
-                            <div className="px-4 pt-4 pb-2 border-b border-theme-border">
-                                <form onSubmit={handleSearchSubmit} className="flex">
-                                    <div className="relative flex-1 flex items-center bg-[#f5f3ef] dark:bg-gray-700/50 rounded-lg border border-gray-200 dark:border-gray-600">
-                                        <input
-                                            type="search"
-                                            value={searchQuery}
-                                            onChange={(e) => setSearchQuery(e.target.value)}
-                                            placeholder="SEARCH GAMES"
-                                            className="w-full py-2.5 pl-4 pr-11 bg-transparent text-theme-text-primary placeholder-gray-400 text-sm focus:outline-none rounded-lg"
-                                            aria-label="Search games"
-                                        />
-                                        <button type="submit" className="absolute right-2 p-1.5 text-theme-text-secondary">
-                                            <Icon icon="material-symbols:search" className="w-5 h-5" />
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-                            <div className="px-4 py-2 space-y-1">
-                                {menuItems.map((item: MenuItem) => {
-                                    const isActive = isMenuItemActive(item);
-
-                                    if (item.type === 'menu' && item.items) {
-                                        return (
-                                            <div key={item.route} className="space-y-1">
-                                                <div className="flex items-center px-3 py-2 text-theme-text-primary">
-                                                    {item.icon && (
-                                                        <Icon icon={item.icon} className="w-5 h-5 mr-3" />
-                                                    )}
-                                                    <span className="whitespace-nowrap">{item.title}</span>
-                                                </div>
-                                                <div className="pl-8 space-y-1">
-                                                    {Object.entries(item.items).map(([key, subitem]) => (
-                                                        <Link
-                                                            key={key}
-                                                            href={subitem.href || `${item.route}/${key}`}
-                                                            className="flex items-center px-3 py-2 text-sm text-theme-text-secondary hover:text-primary-500 dark:hover:text-primary-400"
-                                                            onClick={handleCloseMenu}
-                                                        >
-                                                            {subitem.icon && (
-                                                                <Icon icon={subitem.icon} className="w-4 h-4 mr-3" />
-                                                            )}
-                                                            <span className="whitespace-nowrap">{subitem.title}</span>
-                                                        </Link>
-                                                    ))}
-                                                </div>
-                                            </div>
-                                        )
-                                    }
-
-                                    return (
-                                        <Link
-                                            key={item.key}
-                                            href={item.href || item.route || ''}
-                                            className={`flex items-center px-3 py-2 ${isActive
-                                                ? 'text-primary-500 dark:text-primary-400'
-                                                : 'text-theme-text-secondary hover:text-primary-500 dark:hover:text-primary-400'
-                                                }`}
-                                            onClick={handleCloseMenu}
-                                        >
-                                            {item.icon && (
-                                                <Icon icon={item.icon} className="w-5 h-5 mr-3" />
-                                            )}
-                                            <span className="whitespace-nowrap">{item.title}</span>
-                                        </Link>
-                                    )
-                                })}
-                            </div>
-
-                            {/* 移动端功能区域 */}
-                            <div className="fixed bottom-0 left-0 right-0 border-t border-theme-border bg-theme-bg-primary dark:bg-dark-secondary">
-                                <div className="px-4 py-3 flex items-center justify-between">
-                                    {i18nEnabled && <LocaleSwitch />}
-                                    {themeEnabled && <ThemeSwitch />}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </header>
-            <div className="mt-16 md:mt-20 border-b border-theme-border bg-theme-bg-primary/50 dark:bg-dark-secondary/50 backdrop-blur-md">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                </div>
+        <div className="space-y-4">
+          <div className="border-t border-[#2b2c3f] pt-[18px]">
+            <div className="space-y-[8px]">
+              {utilityLinks.map((item) => (
+                <Link
+                  key={item.title}
+                  href={item.href}
+                  className="block text-[16px] leading-none text-[#9fa4c5] transition-colors hover:text-white"
+                >
+                  {item.title}
+                </Link>
+              ))}
             </div>
-        </>
-    )
-} 
+          </div>
+          <p className="text-xs text-[#646985]">©2026 ReactionTimeTest</p>
+        </div>
+      </div>
+    </aside>
+  )
+
+  return (
+    <>
+      <header className="fixed left-0 right-0 top-0 z-50 h-[61px] border-b border-[#2c2d43] bg-[#202031]">
+        <div className="flex h-full items-center gap-3 px-[12px]">
+          <button
+            type="button"
+            onClick={() => {
+              if (window.innerWidth < 1024) {
+                setIsMobileMenuOpen((prev) => !prev)
+              } else {
+                onToggle()
+              }
+            }}
+            className="relative flex h-10 w-10 items-center justify-center text-[#f0f0ff] transition-colors hover:bg-[#2a2a40]"
+            aria-label="Toggle navigation"
+          >
+            <span className="relative h-[22px] w-[25px]">
+              <span className="absolute left-[2px] top-[2px] h-[2px] w-[16px] rounded-full bg-current" />
+              <span className="absolute left-[2px] top-[10px] h-[2px] w-[16px] rounded-full bg-current" />
+              <span className="absolute left-[2px] top-[18px] h-[2px] w-[16px] rounded-full bg-current" />
+              <span className="absolute right-[1px] top-[7px] h-0 w-0 border-y-[4px] border-r-[6px] border-y-transparent border-r-current" />
+            </span>
+          </button>
+
+          <Link href={homeHref} className="flex items-center">
+            <span className="select-none text-[29px] font-light uppercase tracking-[0.17em] text-white [text-shadow:0_0_4px_#fff,0_0_9px_rgba(255,255,255,0.78),0_0_17px_rgba(204,209,255,0.58)]">
+            ReactionTimeTest
+            </span>
+          </Link>
+
+          <form onSubmit={handleSearchSubmit} className="ml-auto hidden flex-1 md:block">
+            <div className="mx-auto w-full max-w-[460px]">
+              <div className="relative">
+                <input
+                  type="search"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder="Search"
+                  className="h-11 w-full rounded-full border border-[#4a4a67] bg-[#41415e] px-5 pr-12 text-sm text-white placeholder:text-[#c4c4db] focus:border-[#6b6b91] focus:outline-none"
+                />
+                <button
+                  type="submit"
+                  className="absolute right-1.5 top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-[#5462ff] text-white"
+                  aria-label="Search"
+                >
+                  <Icon icon="material-symbols:search-rounded" className="h-4 w-4" />
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <div className="ml-auto hidden items-center gap-2 md:flex">
+            {i18nEnabled && <LocaleSwitch compact />}
+            {themeEnabled && <ThemeSwitch compact />}
+          </div>
+        </div>
+      </header>
+
+      {DesktopSidebar}
+
+      {isMobileMenuOpen && (
+        <div className="fixed inset-0 z-40 bg-black/50 lg:hidden" onClick={() => setIsMobileMenuOpen(false)}>
+          <aside
+            className="h-full w-[280px] border-r border-[#2d2d40] bg-[#12121d] p-4"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="mb-5 flex items-center">
+              <span className="select-none text-[24px] font-light uppercase tracking-[0.15em] text-white [text-shadow:0_0_4px_#fff,0_0_9px_rgba(255,255,255,0.78),0_0_17px_rgba(204,209,255,0.58)]">
+              ReactionTimeTest
+              </span>
+            </div>
+            <div className="space-y-1">
+              {primaryNav.map((item) => (
+                <Link
+                  key={item.title}
+                  href={item.href}
+                  className={`flex items-center gap-3 rounded-xl px-3 py-3 text-sm font-medium transition-colors ${
+                    isActive(item.href)
+                      ? 'bg-[#24243a] text-white'
+                      : 'text-[#d1d1e7] hover:bg-[#1c1c2d] hover:text-white'
+                  }`}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <span className="flex h-7 w-7 items-center justify-center text-base">
+                    {navIcons[item.title] || '•'}
+                  </span>
+                  <span>{item.title}</span>
+                </Link>
+              ))}
+            </div>
+          </aside>
+        </div>
+      )}
+    </>
+  )
+}

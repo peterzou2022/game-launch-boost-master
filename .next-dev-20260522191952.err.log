@@ -1,0 +1,1326 @@
+Browserslist: browsers data (caniuse-lite) is 17 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'D:\DumpStack.log.tmp'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'D:\pagefile.sys'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'D:\DumpStack.log.tmp'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'D:\pagefile.sys'
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+Do not add <script> tags using next/head (see <script> tag with src="https://www.googletagmanager.com/gtag/js?id=G-H9THH2Q7H5"). Use next/script instead. 
+See more info here: https://nextjs.org/docs/messages/no-script-tags-in-head-component
+Do not add <script> tags using next/head (see inline <script>). Use next/script instead. 
+See more info here: https://nextjs.org/docs/messages/no-script-tags-in-head-component
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⨯ Error: Cannot find module './chunks/vendor-chunks/next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1.js'
+Require stack:
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\pages\_document.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1383:15)
+    at D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at o.f.require (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1888)
+    at D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1361
+    at Array.reduce (<anonymous>)
+    at o.e (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1340)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\webpack-runtime.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\pages\\_document.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/en'
+}
+ ⨯ Error: Cannot find module './chunks/vendor-chunks/next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1.js'
+Require stack:
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\pages\_document.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1383:15)
+    at D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at o.f.require (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1888)
+    at D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1361
+    at Array.reduce (<anonymous>)
+    at o.e (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1340)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\webpack-runtime.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\pages\\_document.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'D:\DumpStack.log.tmp'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'D:\pagefile.sys'
+Error: Cannot find module './chunks/vendor-chunks/next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1.js'
+Require stack:
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\pages\_document.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1383:15)
+    at D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at o.f.require (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1888)
+    at D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1361
+    at Array.reduce (<anonymous>)
+    at o.e (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1340)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\webpack-runtime.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\pages\\_document.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/en'
+}
+ ⨯ Error: Cannot find module './chunks/vendor-chunks/next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1.js'
+Require stack:
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\pages\_document.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1383:15)
+    at D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at o.f.require (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1888)
+    at D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1361
+    at Array.reduce (<anonymous>)
+    at o.e (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1340)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\webpack-runtime.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\pages\\_document.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+Error: ENOENT: no such file or directory, open 'D:\AI\ai_coding\game-launch-boost-master\.next\fallback-build-manifest.json'
+    at readFileSync (node:fs:440:20)
+    at loadManifest (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-manifest.js:36:52)
+    at loadManifestWithRetries (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js:40:51)
+    at async loadDefaultErrorComponentsImpl (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-default-error-components.js:30:24)
+    at async DevServer.getFallbackErrorComponents (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\next-dev-server.js:594:16)
+    at async DevServer.renderErrorToResponseImpl (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\base-server.js:2190:40)
+    at async pipe.req.req (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\base-server.js:2043:30)
+    at async DevServer.pipeImpl (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\base-server.js:921:25)
+    at async D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js:173:21)
+    at async requestHandlerImpl (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js:386:24)
+    at async Server.requestListener (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\fallback-build-manifest.json'
+}
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'D:\AI\ai_coding\game-launch-boost-master\.next\server\pages\index.js'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../../../../.next/server/pages/index' in D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'D:\AI\ai_coding\game-launch-boost-master\.next\server\pages\index.js', but to 'Error: Can't resolve '../../../../../../../.next/server/pages/index' in 'D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../../../../.next/server/pages/index (expected D:\AI\ai_coding\game-launch-boost-master\.next\server\pages\index.js)
+<w>  at file dependencies D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require.js
+<w>  at file D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require.js
+<w>  at file dependencies D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js
+<w>  at file D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js
+<w>  at file D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js
+<w>  at file dependencies D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file dependencies D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\compiled\loader-runner\LoaderRunner.js
+<w>  at file D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\compiled\loader-runner\LoaderRunner.js
+<w>  at file dependencies D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\compiled\webpack\bundle5.js
+<w>  at file D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\compiled\webpack\bundle5.js
+<w>  at file dependencies D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\compiled\webpack\webpack.js
+<w>  at file D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\compiled\webpack\webpack.js
+<w>  at file dependencies D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\webpack\plugins\define-env-plugin.js
+<w>  at file D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\webpack\plugins\define-env-plugin.js
+<w>  at file dependencies D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\swc\index.js
+<w>  at file D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\swc\index.js
+<w>  at file dependencies D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w>  at file D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w>  at resolve commonjs D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+ ⨯ Error: Cannot find module './chunks/vendor-chunks/next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1.js'
+Require stack:
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\pages\_document.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1383:15)
+    at D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at o.f.require (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1888)
+    at D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1361
+    at Array.reduce (<anonymous>)
+    at o.e (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1340)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\webpack-runtime.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\pages\\_document.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/en'
+}
+ ⨯ Error: Cannot find module './chunks/vendor-chunks/next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1.js'
+Require stack:
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\pages\_document.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1383:15)
+    at D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at o.f.require (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1888)
+    at D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1361
+    at Array.reduce (<anonymous>)
+    at o.e (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1340)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\webpack-runtime.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\pages\\_document.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+Error: Cannot find module './chunks/vendor-chunks/next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1.js'
+Require stack:
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\pages\_document.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1383:15)
+    at D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at o.f.require (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1888)
+    at D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1361
+    at Array.reduce (<anonymous>)
+    at o.e (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1340)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\webpack-runtime.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\pages\\_document.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/en'
+}
+ ⨯ Error: Cannot find module './chunks/vendor-chunks/next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1.js'
+Require stack:
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\pages\_document.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1383:15)
+    at D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at o.f.require (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1888)
+    at D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1361
+    at Array.reduce (<anonymous>)
+    at o.e (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1340)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\webpack-runtime.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\pages\\_document.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+Error: ENOENT: no such file or directory, open 'D:\AI\ai_coding\game-launch-boost-master\.next\fallback-build-manifest.json'
+    at readFileSync (node:fs:440:20)
+    at loadManifest (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-manifest.js:36:52)
+    at loadManifestWithRetries (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js:40:51)
+    at async loadDefaultErrorComponentsImpl (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-default-error-components.js:30:24)
+    at async DevServer.getFallbackErrorComponents (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\next-dev-server.js:594:16)
+    at async DevServer.renderErrorToResponseImpl (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\base-server.js:2190:40)
+    at async pipe.req.req (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\base-server.js:2043:30)
+    at async DevServer.pipeImpl (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\base-server.js:921:25)
+    at async D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js:173:21)
+    at async requestHandlerImpl (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js:386:24)
+    at async Server.requestListener (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\fallback-build-manifest.json'
+}
+ ⨯ Error: Cannot find module './chunks/vendor-chunks/next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1.js'
+Require stack:
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\pages\_document.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1383:15)
+    at D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at o.f.require (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1888)
+    at D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1361
+    at Array.reduce (<anonymous>)
+    at o.e (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1340)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\webpack-runtime.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\pages\\_document.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/en'
+}
+ ⨯ Error: Cannot find module './chunks/vendor-chunks/next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1.js'
+Require stack:
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\pages\_document.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1383:15)
+    at D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at o.f.require (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1888)
+    at D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1361
+    at Array.reduce (<anonymous>)
+    at o.e (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1340)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\webpack-runtime.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\pages\\_document.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+Error: Cannot find module './chunks/vendor-chunks/next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1.js'
+Require stack:
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\pages\_document.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1383:15)
+    at D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at o.f.require (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1888)
+    at D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1361
+    at Array.reduce (<anonymous>)
+    at o.e (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1340)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\webpack-runtime.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\pages\\_document.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/en'
+}
+ ⨯ Error: Cannot find module './chunks/vendor-chunks/next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1.js'
+Require stack:
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\pages\_document.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1383:15)
+    at D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at o.f.require (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1888)
+    at D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1361
+    at Array.reduce (<anonymous>)
+    at o.e (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1340)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\webpack-runtime.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\pages\\_document.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+Error: ENOENT: no such file or directory, open 'D:\AI\ai_coding\game-launch-boost-master\.next\fallback-build-manifest.json'
+    at readFileSync (node:fs:440:20)
+    at loadManifest (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-manifest.js:36:52)
+    at loadManifestWithRetries (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js:40:51)
+    at async loadDefaultErrorComponentsImpl (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-default-error-components.js:30:24)
+    at async DevServer.getFallbackErrorComponents (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\next-dev-server.js:594:16)
+    at async DevServer.renderErrorToResponseImpl (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\base-server.js:2190:40)
+    at async pipe.req.req (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\base-server.js:2043:30)
+    at async DevServer.pipeImpl (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\base-server.js:921:25)
+    at async D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js:173:21)
+    at async requestHandlerImpl (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js:386:24)
+    at async Server.requestListener (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\fallback-build-manifest.json'
+}
+ ⨯ Error: Cannot find module './chunks/vendor-chunks/next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1.js'
+Require stack:
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\pages\_document.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1383:15)
+    at D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at o.f.require (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1888)
+    at D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1361
+    at Array.reduce (<anonymous>)
+    at o.e (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1340)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\webpack-runtime.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\pages\\_document.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/en'
+}
+ ⨯ Error: Cannot find module './chunks/vendor-chunks/next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1.js'
+Require stack:
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\pages\_document.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1383:15)
+    at D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at o.f.require (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1888)
+    at D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1361
+    at Array.reduce (<anonymous>)
+    at o.e (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1340)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\webpack-runtime.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\pages\\_document.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+Error: Cannot find module './chunks/vendor-chunks/next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1.js'
+Require stack:
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\pages\_document.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1383:15)
+    at D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at o.f.require (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1888)
+    at D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1361
+    at Array.reduce (<anonymous>)
+    at o.e (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1340)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\webpack-runtime.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\pages\\_document.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/en'
+}
+ ⨯ Error: Cannot find module './chunks/vendor-chunks/next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1.js'
+Require stack:
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\pages\_document.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1383:15)
+    at D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at o.f.require (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1888)
+    at D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1361
+    at Array.reduce (<anonymous>)
+    at o.e (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1340)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\webpack-runtime.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\pages\\_document.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+Error: ENOENT: no such file or directory, open 'D:\AI\ai_coding\game-launch-boost-master\.next\fallback-build-manifest.json'
+    at readFileSync (node:fs:440:20)
+    at loadManifest (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-manifest.js:36:52)
+    at loadManifestWithRetries (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js:40:51)
+    at async loadDefaultErrorComponentsImpl (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-default-error-components.js:30:24)
+    at async DevServer.getFallbackErrorComponents (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\next-dev-server.js:594:16)
+    at async DevServer.renderErrorToResponseImpl (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\base-server.js:2190:40)
+    at async pipe.req.req (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\base-server.js:2043:30)
+    at async DevServer.pipeImpl (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\base-server.js:921:25)
+    at async D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js:173:21)
+    at async requestHandlerImpl (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js:386:24)
+    at async Server.requestListener (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\fallback-build-manifest.json'
+}
+ ⨯ Error: Cannot find module './chunks/vendor-chunks/next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1.js'
+Require stack:
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\pages\_document.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1383:15)
+    at D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at o.f.require (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1888)
+    at D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1361
+    at Array.reduce (<anonymous>)
+    at o.e (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1340)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\webpack-runtime.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\pages\\_document.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './chunks/vendor-chunks/next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1.js'
+Require stack:
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\pages\_document.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1383:15)
+    at D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at o.f.require (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1888)
+    at D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1361
+    at Array.reduce (<anonymous>)
+    at o.e (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1340)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\webpack-runtime.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\pages\\_document.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+Error: Cannot find module './chunks/vendor-chunks/next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1.js'
+Require stack:
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\pages\_document.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1383:15)
+    at D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at o.f.require (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1888)
+    at D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1361
+    at Array.reduce (<anonymous>)
+    at o.e (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1340)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\webpack-runtime.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\pages\\_document.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './chunks/vendor-chunks/next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1.js'
+Require stack:
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\pages\_document.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1383:15)
+    at D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at o.f.require (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1888)
+    at D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1361
+    at Array.reduce (<anonymous>)
+    at o.e (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1340)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\webpack-runtime.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\pages\\_document.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+Error: ENOENT: no such file or directory, open 'D:\AI\ai_coding\game-launch-boost-master\.next\fallback-build-manifest.json'
+    at readFileSync (node:fs:440:20)
+    at loadManifest (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-manifest.js:36:52)
+    at loadManifestWithRetries (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js:40:51)
+    at async loadDefaultErrorComponentsImpl (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-default-error-components.js:30:24)
+    at async DevServer.getFallbackErrorComponents (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\next-dev-server.js:594:16)
+    at async DevServer.renderErrorToResponseImpl (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\base-server.js:2190:40)
+    at async pipe.req.req (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\base-server.js:2043:30)
+    at async DevServer.pipeImpl (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\base-server.js:921:25)
+    at async D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js:173:21)
+    at async requestHandlerImpl (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js:386:24)
+    at async Server.requestListener (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\fallback-build-manifest.json'
+}
+ ⨯ Error: Cannot find module './chunks/vendor-chunks/next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1.js'
+Require stack:
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\pages\_document.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1383:15)
+    at D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at o.f.require (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1888)
+    at D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1361
+    at Array.reduce (<anonymous>)
+    at o.e (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1340)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\webpack-runtime.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\pages\\_document.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './chunks/vendor-chunks/next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1.js'
+Require stack:
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\pages\_document.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1383:15)
+    at D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at o.f.require (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1888)
+    at D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1361
+    at Array.reduce (<anonymous>)
+    at o.e (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1340)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\webpack-runtime.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\pages\\_document.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+Error: Cannot find module './chunks/vendor-chunks/next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1.js'
+Require stack:
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\pages\_document.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1383:15)
+    at D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at o.f.require (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1888)
+    at D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1361
+    at Array.reduce (<anonymous>)
+    at o.e (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1340)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\webpack-runtime.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\pages\\_document.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './chunks/vendor-chunks/next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1.js'
+Require stack:
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\pages\_document.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1383:15)
+    at D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at o.f.require (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1888)
+    at D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1361
+    at Array.reduce (<anonymous>)
+    at o.e (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1340)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\webpack-runtime.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\pages\\_document.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+Error: ENOENT: no such file or directory, open 'D:\AI\ai_coding\game-launch-boost-master\.next\fallback-build-manifest.json'
+    at readFileSync (node:fs:440:20)
+    at loadManifest (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-manifest.js:36:52)
+    at loadManifestWithRetries (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js:40:51)
+    at async loadDefaultErrorComponentsImpl (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-default-error-components.js:30:24)
+    at async DevServer.getFallbackErrorComponents (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\next-dev-server.js:594:16)
+    at async DevServer.renderErrorToResponseImpl (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\base-server.js:2190:40)
+    at async pipe.req.req (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\base-server.js:2043:30)
+    at async DevServer.pipeImpl (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\base-server.js:921:25)
+    at async D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js:173:21)
+    at async requestHandlerImpl (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js:386:24)
+    at async Server.requestListener (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\fallback-build-manifest.json'
+}
+ ⨯ Error: Cannot find module './chunks/vendor-chunks/next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1.js'
+Require stack:
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\pages\_document.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1383:15)
+    at D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at o.f.require (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1888)
+    at D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1361
+    at Array.reduce (<anonymous>)
+    at o.e (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1340)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\webpack-runtime.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\pages\\_document.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/zh'
+}
+ ⨯ Error: Cannot find module './chunks/vendor-chunks/next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1.js'
+Require stack:
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\pages\_document.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1383:15)
+    at D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at o.f.require (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1888)
+    at D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1361
+    at Array.reduce (<anonymous>)
+    at o.e (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1340)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\webpack-runtime.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\pages\\_document.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './chunks/vendor-chunks/next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1.js'
+Require stack:
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\pages\_document.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1383:15)
+    at D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at o.f.require (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1888)
+    at D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1361
+    at Array.reduce (<anonymous>)
+    at o.e (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1340)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\webpack-runtime.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\pages\\_document.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './chunks/vendor-chunks/next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1.js'
+Require stack:
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js
+- D:\AI\ai_coding\game-launch-boost-master\.next\server\pages\_document.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\load-components.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\build\utils.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js
+- D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1383:15)
+    at D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at o.f.require (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1888)
+    at D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1361
+    at Array.reduce (<anonymous>)
+    at o.e (D:\AI\ai_coding\game-launch-boost-master\.next\server\webpack-runtime.js:1:1340)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\webpack-runtime.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\.next\\server\\pages\\_document.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\AI\\ai_coding\\game-launch-boost-master\\node_modules\\.pnpm\\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/'
+}

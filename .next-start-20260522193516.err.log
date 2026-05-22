@@ -1,0 +1,6 @@
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\next.js:210:31
+    at async NextServer.prepare (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\next.js:154:24)
+    at async initializeImpl (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\render-server.js:98:5)
+    at async initialize (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\router-server.js:420:22)
+    at async Server.<anonymous> (D:\AI\ai_coding\game-launch-boost-master\node_modules\.pnpm\next@14.2.22_react-dom@18.3.1_react@18.3.1__react@18.3.1\node_modules\next\dist\server\lib\start-server.js:249:36)

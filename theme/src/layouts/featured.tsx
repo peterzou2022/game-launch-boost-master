@@ -1,211 +1,229 @@
-import React from 'react';
-import type { PageMapItem } from 'nextra';
-import { Breadcrumb } from '../components/Breadcrumb';
-import { GameCarousel } from '../components/GameCarousel';
-import { GameFrame } from '../components/GameFrame';
-import { CommentsSection } from '../components/CommentsSection';
-import { useRouter } from 'nextra/hooks';
-import { getGamesByCategory } from '../utils/getGamesByCategory';
-import type { FrontMatter } from '../types';
-import type { ThemeConfig } from '../types';
-import { Icon } from '@iconify/react';
+import React from 'react'
+import type { PageMapItem } from 'nextra'
+import { Icon } from '@iconify/react'
+import { useRouter } from 'nextra/hooks'
+import { GameFrame } from '../components/GameFrame'
+import { CommentsSection } from '../components/CommentsSection'
+import { RightRailGames } from '../components/RightRailGames'
+import { getGamesByCategory } from '../utils/getGamesByCategory'
+import type { FrontMatter, ThemeConfig } from '../types'
 
 interface FeaturedLayoutProps {
-    children: React.ReactNode;
-    frontMatter: FrontMatter;
-    pageMap: PageMapItem[];
-    themeConfig?: ThemeConfig;
+  children: React.ReactNode
+  frontMatter: FrontMatter
+  pageMap: PageMapItem[]
+  themeConfig?: ThemeConfig
 }
 
 const HOMEPAGE_FAQ_SCHEMA = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: [
-        {
-            '@type': 'Question',
-            name: 'What is reaction time?',
-            acceptedAnswer: {
-                '@type': 'Answer',
-                text: 'Reaction time is the delay between a stimulus (e.g. something you see or hear) and your response (e.g. click or key press). A reaction time test measures this in milliseconds.',
-            },
-        },
-        {
-            '@type': 'Question',
-            name: 'What is the average human reaction time?',
-            acceptedAnswer: {
-                '@type': 'Answer',
-                text: 'For visual stimuli, the average is about 200–250 ms. It can vary with age, fitness, sleep, and practice.',
-            },
-        },
-        {
-            '@type': 'Question',
-            name: 'Is 200 ms reaction time good?',
-            acceptedAnswer: {
-                '@type': 'Answer',
-                text: 'Yes. 200 ms is above average. Many people are around 250 ms, so 200 ms is considered good.',
-            },
-        },
-        {
-            '@type': 'Question',
-            name: 'Can you improve reaction time?',
-            acceptedAnswer: {
-                '@type': 'Answer',
-                text: 'Yes. Regular practice (e.g. taking a reaction time test), good sleep, hydration, and exercise can help improve and maintain faster reflexes.',
-            },
-        },
-    ],
-};
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What is reaction time?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Reaction time is the delay between a stimulus and your response. A reaction time test measures this in milliseconds.'
+      }
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the average human reaction time?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'For visual stimuli, the average is about 200 to 250 milliseconds.'
+      }
+    }
+  ]
+}
 
 const HOMEPAGE_FAQ_SCHEMA_ZH = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: [
-        {
-            '@type': 'Question',
-            name: '什么是反应时间？',
-            acceptedAnswer: {
-                '@type': 'Answer',
-                text: '反应时间是指从刺激（例如看到或听到的内容）出现到你做出反应（例如点击或按键）之间的延迟。反应时间测试就是用毫秒来测量这段时间。',
-            },
-        },
-        {
-            '@type': 'Question',
-            name: '人的平均反应时间是多少？',
-            acceptedAnswer: {
-                '@type': 'Answer',
-                text: '对视觉刺激而言，平均大约在 200–250 毫秒，会因年龄、体能、睡眠和练习而有所差异。',
-            },
-        },
-        {
-            '@type': 'Question',
-            name: '200 毫秒的反应时间算好吗？',
-            acceptedAnswer: {
-                '@type': 'Answer',
-                text: '算。200 毫秒高于平均水平。很多人约在 250 毫秒左右，所以 200 毫秒属于较好水平。',
-            },
-        },
-        {
-            '@type': 'Question',
-            name: '反应时间能提高吗？',
-            acceptedAnswer: {
-                '@type': 'Answer',
-                text: '能。经常练习（例如做反应时间测试）、保证睡眠、补水和运动，都有助于提高和保持更快的反应速度。',
-            },
-        },
-    ],
-};
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: '什么是反应时间？',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: '反应时间是从刺激出现到做出动作之间的延迟，通常以毫秒为单位。'
+      }
+    },
+    {
+      '@type': 'Question',
+      name: '人类平均反应时间是多少？',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: '视觉反应的常见平均值大约在 200 到 250 毫秒之间。'
+      }
+    }
+  ]
+}
 
-export function FeaturedLayout({ children, frontMatter, pageMap, themeConfig }: FeaturedLayoutProps) {
-    const router = useRouter();
-    const { locale = 'en', asPath } = router;
-    const isHomepage = asPath === '/' || asPath === '/en' || asPath === '/zh' || asPath === `/${locale}`;
-    const baseUrl = (themeConfig?.url || 'https://example.com').replace(/\/$/, '');
-    const homepageUrl = locale === 'zh' ? `${baseUrl}/zh` : locale === 'en' ? `${baseUrl}/en` : baseUrl;
+function AdSlot({ image, href }: { image?: string; href?: string }) {
+  if (!image) return null
 
-    // 获取特色分类的游戏
-    const getFeaturedGames = (category: string) => {
-        const games = getGamesByCategory(pageMap, category, locale);
-        return games.slice(0, 20); // 只取前20个游戏
-    };
+  const content = (
+    <div className="rounded-[14px] bg-[#171824] p-4 shadow-[0_10px_32px_rgba(0,0,0,0.24)] ring-1 ring-[#26283b]">
+      <p className="mb-3 text-center text-[11px] uppercase tracking-[0.18em] text-[#8e92b5]">
+        Advertisement
+      </p>
+      <img src={image} alt="Advertisement" className="w-full rounded-xl object-cover" />
+    </div>
+  )
 
-    // 从路径获取分类名称（中文环境下部分分类使用中文标题）
-    const getCategoryTitle = (path: string) => {
-        if (locale === 'zh' && path === 'games/Reaction-Time-Test') return '反应时间测试';
-        const parts = path.split('/');
-        const lastPart = parts[parts.length - 1];
-        return lastPart
-            .split('-')
-            .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-            .join(' ');
-    };
+  return href ? (
+    <a href={href} target="_blank" rel="noreferrer">
+      {content}
+    </a>
+  ) : (
+    content
+  )
+}
 
-    // 从 frontMatter 中获取分类列表
-    const categories = frontMatter.categories || [];
+export function FeaturedLayout({
+  children,
+  frontMatter,
+  pageMap,
+  themeConfig
+}: FeaturedLayoutProps) {
+  const router = useRouter()
+  const { locale = 'en', asPath } = router
+  const [expanded, setExpanded] = React.useState(false)
+  const isHomepage = asPath === '/' || asPath === '/en' || asPath === '/zh' || asPath === `/${locale}`
+  const baseUrl = (themeConfig?.url || 'https://example.com').replace(/\/$/, '')
+  const homepageUrl = locale === 'zh' ? `${baseUrl}/zh` : locale === 'en' ? `${baseUrl}/en` : baseUrl
 
-    const webAppSchema = React.useMemo(
-        () =>
-            isHomepage && frontMatter.game
-                ? {
-                      '@context': 'https://schema.org',
-                      '@type': 'WebApplication',
-                      name: frontMatter.title || (locale === 'zh' ? '反应时间测试' : 'Reaction Time Test'),
-                      description: frontMatter.description || (locale === 'zh' ? '免费在线反应时间测试，测量你的反应速度（毫秒）。' : 'Free online reaction time test. Measure your reflex speed in milliseconds.'),
-                      url: homepageUrl,
-                      applicationCategory: 'Game',
-                      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-                  }
-                : null,
-        [isHomepage, frontMatter.game, frontMatter.title, frontMatter.description, homepageUrl, locale]
-    );
+  const categories = frontMatter.categories || []
+  const categoryGames = React.useMemo(
+    () => categories.flatMap((category) => getGamesByCategory(pageMap, category, locale).slice(0, 12)),
+    [categories, locale, pageMap]
+  )
 
-    const faqSchema = locale === 'zh' ? HOMEPAGE_FAQ_SCHEMA_ZH : HOMEPAGE_FAQ_SCHEMA;
+  const uniqueGames = React.useMemo(() => {
+    const seen = new Set<string>()
+    return categoryGames.filter((game) => {
+      const key = game.slug || game.title || ''
+      if (!key || seen.has(key) || game.title === frontMatter.title) return false
+      seen.add(key)
+      return true
+    })
+  }, [categoryGames, frontMatter.title])
 
-    return (
-        <main className="min-h-screen bg-theme-bg-primary dark:bg-[#1a1a1a]">
-            {isHomepage && (
-                <>
-                    <script
-                        type="application/ld+json"
-                        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-                    />
-                    {webAppSchema && (
-                        <script
-                            type="application/ld+json"
-                            dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppSchema) }}
-                        />
-                    )}
-                </>
+  const relatedGames = uniqueGames.slice(0, 6)
+  const recommendedGames = uniqueGames.slice(6, 12)
+
+  const webAppSchema = React.useMemo(
+    () =>
+      isHomepage && frontMatter.game
+        ? {
+            '@context': 'https://schema.org',
+            '@type': 'WebApplication',
+            name: frontMatter.title || (locale === 'zh' ? '反应时间测试' : 'Reaction Time Test'),
+            description:
+              frontMatter.description ||
+              (locale === 'zh'
+                ? '免费在线反应时间测试，测量你的反应速度。'
+                : 'Free online reaction time test. Measure your reflex speed in milliseconds.'),
+            url: homepageUrl,
+            applicationCategory: 'Game',
+            offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }
+          }
+        : null,
+    [frontMatter.description, frontMatter.game, frontMatter.title, homepageUrl, isHomepage, locale]
+  )
+
+  const faqSchema = locale === 'zh' ? HOMEPAGE_FAQ_SCHEMA_ZH : HOMEPAGE_FAQ_SCHEMA
+
+  return (
+    <main className="min-h-screen bg-[#10111b]">
+      {isHomepage && (
+        <>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+          />
+          {webAppSchema && (
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppSchema) }}
+            />
+          )}
+        </>
+      )}
+
+      <div className="mx-auto max-w-[1660px] px-3 py-3 lg:px-4">
+        <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_300px]">
+          <section className="space-y-4">
+            {frontMatter.game && (
+              <GameFrame
+                src={frontMatter.game}
+                title={frontMatter.title || 'Game'}
+                cover={frontMatter.cover}
+              />
             )}
-            {/* 头部区域 */}
-            <div className="max-w-5xl mx-auto px-4 py-6">
-                {frontMatter.game && (
-                    <div className="mb-6">
-                        <GameFrame
-                            src={frontMatter.game}
-                            title={frontMatter.title || 'Game'}
-                            cover={frontMatter.cover}
-                        />
-                    </div>
-                )}
 
-                {/* 分类游戏列表 */}
-                {categories.length > 0 ? (
-                    categories.map((category) => {
-                        const games = getFeaturedGames(category);
-                        if (games.length === 0) return null;
+            {frontMatter.bottomAdImage && (
+              <AdSlot image={frontMatter.bottomAdImage} href={frontMatter.bottomAdHref} />
+            )}
 
-                        return (
-                            <GameCarousel
-                                key={category}
-                                title={getCategoryTitle(category)}
-                                games={games}
-                            />
-                        );
-                    })
-                ) : (
-                    <div className="text-center py-12">
-                        <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 dark:bg-gray-800 mb-4">
-                            <Icon icon="material-symbols:games-outline" className="w-8 h-8 text-gray-400" />
-                        </div>
-                        <h3 className="text-lg font-medium text-theme-text-primary mb-2">
-                            No Categories Found
-                        </h3>
-                        <p className="text-sm text-theme-text-secondary">
-                            Please add some categories in the frontmatter to display games.
-                        </p>
-                    </div>
-                )}
-
-                {/* MDX 内容 */}
-                <div className="mt-8 prose dark:prose-invert prose-slate max-w-none">
-                    <article className="nextra-body relative pb-8 w-full">
-                        {children}
-                    </article>
+            <div className="overflow-hidden rounded-[14px] bg-[#171824] shadow-[0_12px_36px_rgba(0,0,0,0.25)] ring-1 ring-[#26283b]">
+              <div
+                className={`relative overflow-hidden transition-[max-height] duration-500 ${
+                  expanded ? 'max-h-[4000px]' : 'max-h-[720px]'
+                }`}
+              >
+                <div className="space-y-5 px-5 pb-5 pt-5">
+                  <div className="rounded-[14px] bg-[#13141f] p-5 ring-1 ring-[#24263a]">
+                    {frontMatter.description && (
+                      <p className="mb-5 text-base leading-7 text-[#aab0da]">
+                        {frontMatter.description}
+                      </p>
+                    )}
+                    <article className="prose max-w-none dark:prose-invert">{children}</article>
+                  </div>
                 </div>
 
-                {/* 首页底部评论区：供用户整体评价站点或首页推荐 */}
-                <CommentsSection title="Homepage comments" />
+                {!expanded && (
+                  <div className="pointer-events-none absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-[#171824] via-[#171824]/96 to-transparent" />
+                )}
+              </div>
+
+              <div className="border-t border-[#282a3d] px-5 py-4 text-center">
+                <button
+                  type="button"
+                  onClick={() => setExpanded((prev) => !prev)}
+                  className="inline-flex items-center gap-2 text-lg text-[#aab0da] transition-colors hover:text-white"
+                >
+                  <span>{expanded ? 'Show less' : 'Show more'}</span>
+                  <Icon
+                    icon={
+                      expanded
+                        ? 'material-symbols:expand-less-rounded'
+                        : 'material-symbols:expand-more-rounded'
+                    }
+                    className="h-5 w-5"
+                  />
+                </button>
+              </div>
+
+              <div className="px-5 pb-5">
+                <CommentsSection title="Homepage Comments" />
+              </div>
             </div>
-        </main>
-    );
-} 
+          </section>
+
+          <aside className="space-y-4">
+            <AdSlot image={frontMatter.rightAdImage} href={frontMatter.rightAdHref} />
+            <RightRailGames title="Related Games" games={relatedGames} />
+            <RightRailGames
+              title="Recommended Games"
+              games={recommendedGames.length ? recommendedGames : relatedGames.slice(0, 4)}
+            />
+          </aside>
+        </div>
+      </div>
+    </main>
+  )
+}

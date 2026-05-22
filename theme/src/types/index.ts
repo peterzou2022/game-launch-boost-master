@@ -57,6 +57,15 @@ export interface FrontMatter {
   slug?: string;
   locale?: string;
   breadcrumb?: boolean;
+  developer?: string;
+  rating?: string;
+  released?: string;
+  technology?: string;
+  platforms?: string;
+  rightAdImage?: string;
+  rightAdHref?: string;
+  bottomAdImage?: string;
+  bottomAdHref?: string;
 }
 
 export interface PageData {

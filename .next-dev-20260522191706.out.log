@@ -1,0 +1,8 @@
+
+> game-website@1.0.0 dev
+> next dev --port 3000
+
+- [36minfo[0m [nextra] You have Next.js i18n enabled, read here https://nextjs.org/docs/advanced-features/i18n-routing for the docs.
+- [33mwarn[0m [nextra] Next.js doesn't support i18n by locale folder names.
+When i18n enabled, Nextra unset nextConfig.i18n to `undefined`, use `useRouter` from `nextra/hooks` if you need `locale` or `defaultLocale` values.
+[?25h

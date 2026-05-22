@@ -1,0 +1,119 @@
+
+> game-website@1.0.0 dev
+> next dev --port 3000
+
+- [36minfo[0m [nextra] You have Next.js i18n enabled, read here https://nextjs.org/docs/advanced-features/i18n-routing for the docs.
+- [33mwarn[0m [nextra] Next.js doesn't support i18n by locale folder names.
+When i18n enabled, Nextra unset nextConfig.i18n to `undefined`, use `useRouter` from `nextra/hooks` if you need `locale` or `defaultLocale` values.
+- [36minfo[0m [nextra] You have Next.js i18n enabled, read here https://nextjs.org/docs/advanced-features/i18n-routing for the docs.
+- [33mwarn[0m [nextra] Next.js doesn't support i18n by locale folder names.
+When i18n enabled, Nextra unset nextConfig.i18n to `undefined`, use `useRouter` from `nextra/hooks` if you need `locale` or `defaultLocale` values.
+  ▲ Next.js 14.2.22
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+   automatically enabled Fast Refresh for 2 custom loaders
+ ✓ Ready in 3.4s
+ ○ Compiling /_error ...
+ ✓ Compiled /en/games/Reaction-Time-Test/The-Reaction-Time-Test in 14.1s (446 modules)
+ GET /_next/static/webpack/5ec41d5f8cb1226e.webpack.hot-update.json 404 in 14072ms
+ GET /_next/static/webpack/5ec41d5f8cb1226e.webpack.hot-update.json 404 in 14066ms
+ GET /en/games/Reaction-Time-Test/The-Reaction-Time-Test 200 in 8631ms
+ ✓ Compiled /en in 274ms (450 modules)
+ GET /_next/static/webpack/5ec41d5f8cb1226e.webpack.hot-update.json 404 in 306ms
+ GET /_next/static/webpack/5ec41d5f8cb1226e.webpack.hot-update.json 404 in 188ms
+ GET /en 200 in 360ms
+ GET /en/games/Reaction-Time-Test/The-Reaction-Time-Test 200 in 359ms
+ GET /_next/static/webpack/5ec41d5f8cb1226e.webpack.hot-update.json 404 in 7ms
+ GET /en 200 in 49ms
+ GET /en/games/Reaction-Time-Test/The-Reaction-Time-Test 200 in 43ms
+ GET /en 200 in 24ms
+ GET /en 200 in 24ms
+ GET /en 200 in 22ms
+ ✓ Compiled / in 315ms (452 modules)
+ GET / 200 in 361ms
+ ✓ Compiled in 709ms (448 modules)
+ GET /en/games/Reaction-Time-Test/The-Reaction-Time-Test 200 in 52ms
+ ✓ Compiled in 533ms (448 modules)
+ ✓ Compiled in 280ms (448 modules)
+ ✓ Compiled in 269ms (448 modules)
+ ✓ Compiled in 335ms (448 modules)
+ ✓ Compiled in 388ms (448 modules)
+ ✓ Compiled in 297ms (448 modules)
+ ✓ Compiled in 295ms (448 modules)
+ ✓ Compiled in 248ms (448 modules)
+ ✓ Compiled /_error in 104ms (450 modules)
+   automatically enabled Fast Refresh for 2 custom loaders
+ GET /en 500 in 1324ms
+ GET /en 500 in 223ms
+ GET /en 500 in 474ms
+ GET /en 500 in 234ms
+ GET /en 500 in 474ms
+ GET /en 500 in 234ms
+ GET /en 500 in 452ms
+ GET /en 500 in 221ms
+ ✓ Compiled / in 163ms (454 modules)
+ GET / 500 in 665ms
+ GET / 500 in 248ms
+ GET / 500 in 491ms
+ GET / 500 in 233ms
+ GET / 200 in 18ms
+ ✓ Compiled /zh in 354ms (456 modules)
+ ✓ Compiled /_error in 77ms (458 modules)
+ GET /zh 500 in 541ms
+ GET /_next/static/chunks/main.js 404 in 16ms
+ GET /_next/static/chunks/react-refresh.js 404 in 15ms
+ GET /_next/static/chunks/pages/_app.js 404 in 14ms
+ GET /_next/static/chunks/pages/_error.js 404 in 8ms
+ GET /_next/static/chunks/main.js 404 in 12ms
+ GET /_next/static/chunks/react-refresh.js 404 in 11ms
+ GET /_next/static/chunks/pages/_app.js 404 in 12ms
+ GET /_next/static/chunks/pages/_error.js 404 in 6ms
+ GET /en 404 in 11ms
+ GET /_next/static/chunks/main.js 404 in 15ms
+ GET /_next/static/chunks/react-refresh.js 404 in 14ms
+ GET /_next/static/chunks/pages/_app.js 404 in 12ms
+ GET /_next/static/chunks/pages/_error.js 404 in 16ms
+ GET /_next/static/chunks/main.js 404 in 7ms
+ GET /_next/static/chunks/react-refresh.js 404 in 16ms
+ GET /_next/static/chunks/pages/_app.js 404 in 4ms
+ GET /_next/static/chunks/pages/_error.js 404 in 4ms
+ GET /en 404 in 7ms
+ GET /_next/static/chunks/main.js 404 in 17ms
+ GET /_next/static/chunks/react-refresh.js 404 in 16ms
+ GET /_next/static/chunks/pages/_app.js 404 in 24ms
+ GET /_next/static/chunks/pages/_error.js 404 in 23ms
+ GET /_next/static/chunks/main.js 404 in 10ms
+ GET /_next/static/chunks/react-refresh.js 404 in 25ms
+ GET /_next/static/chunks/pages/_app.js 404 in 22ms
+ GET /_next/static/chunks/pages/_error.js 404 in 5ms
+ ✓ Compiled / in 95ms (462 modules)
+ GET / 500 in 113ms
+ GET / 500 in 10ms
+ GET /_next/static/chunks/main.js 404 in 16ms
+ GET /_next/static/chunks/react-refresh.js 404 in 14ms
+ GET /_next/static/chunks/pages/_app.js 404 in 13ms
+ GET /_next/static/chunks/pages/_error.js 404 in 7ms
+ GET /_next/static/chunks/main.js 404 in 7ms
+ GET /_next/static/chunks/react-refresh.js 404 in 10ms
+ GET /_next/static/chunks/pages/_app.js 404 in 11ms
+ GET /_next/static/chunks/pages/_error.js 404 in 11ms
+ GET / 500 in 23ms
+ GET /_next/static/chunks/main.js 404 in 13ms
+ GET /_next/static/chunks/react-refresh.js 404 in 13ms
+ GET /_next/static/chunks/pages/_app.js 404 in 17ms
+ GET /_next/static/chunks/pages/_error.js 404 in 11ms
+ GET /_next/static/chunks/main.js 404 in 8ms
+ GET /_next/static/chunks/react-refresh.js 404 in 9ms
+ GET /_next/static/chunks/pages/_app.js 404 in 13ms
+ GET /_next/static/chunks/pages/_error.js 404 in 7ms
+ GET /en 404 in 8ms
+ GET /_next/static/chunks/main.js 404 in 17ms
+ GET /_next/static/chunks/react-refresh.js 404 in 17ms
+ GET /_next/static/chunks/pages/_app.js 404 in 14ms
+ GET /_next/static/chunks/pages/_error.js 404 in 8ms
+ GET /_next/static/chunks/main.js 404 in 9ms
+ GET /_next/static/chunks/react-refresh.js 404 in 11ms
+ GET /_next/static/chunks/pages/_app.js 404 in 11ms
+ GET /_next/static/chunks/pages/_error.js 404 in 20ms
+[?25h
