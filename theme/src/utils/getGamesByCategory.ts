@@ -47,6 +47,10 @@ function getAllGames(pageMap: PageMapItem[], locale: string) {
   return games
 }
 
+export function getAllGamePages(pageMap: PageMapItem[], locale: string = 'en') {
+  return getAllGames(pageMap, locale)
+}
+
 export function getGamesByCategory(
   pageMap: PageMapItem[],
   category: string,

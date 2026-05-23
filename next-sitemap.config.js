@@ -28,6 +28,7 @@ function findUrlConfig(path) {
 const defaultConfig = {
   siteUrl: SITE_CONFIG.url,
   generateRobotsTxt: true,
+  generateIndexSitemap: false,
   output: "static", // 适配 Next.js output: "export"，将 sitemap 写入 out/ 目录
   changefreq: "weekly",
   exclude: ["*/404", "*/500", "*/404.html", "*/500.html"],

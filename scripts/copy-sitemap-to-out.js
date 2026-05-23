@@ -6,6 +6,7 @@
  */
 const fs = require('fs');
 const path = require('path');
+const sitemapConfig = require('../next-sitemap.config.js');
 
 const root = path.join(__dirname, '..');
 const publicDir = path.join(root, 'public');
@@ -16,7 +17,21 @@ if (!fs.existsSync(outDir)) {
   process.exit(0);
 }
 
-const sitemapFiles = fs.existsSync(publicDir) ? fs.readdirSync(publicDir).filter((f) => f.startsWith('sitemap') && f.endsWith('.xml')) : [];
+const singleSitemapMode = sitemapConfig.generateIndexSitemap === false;
+const staleFiles = singleSitemapMode ? ['sitemap-0.xml'] : [];
+
+staleFiles.forEach((file) => {
+  [path.join(publicDir, file), path.join(outDir, file)].forEach((target) => {
+    if (fs.existsSync(target)) {
+      fs.unlinkSync(target);
+      console.log(`[copy-sitemap] 已删除旧文件 ${target}`);
+    }
+  });
+});
+
+const sitemapFiles = fs.existsSync(publicDir)
+  ? fs.readdirSync(publicDir).filter((f) => f.startsWith('sitemap') && f.endsWith('.xml'))
+  : [];
 const files = ['robots.txt', ...sitemapFiles];
 
 files.forEach((file) => {

@@ -28,14 +28,6 @@ interface ThemeConfig {
   }
 }
 
-const utilityLinks = [
-  { title: 'About Us', href: '#' },
-  { title: 'Contact Us', href: '#' },
-  { title: 'DMCA', href: '#' },
-  { title: 'Privacy Policy', href: '#' },
-  { title: 'Terms of Service', href: '#' }
-]
-
 const navIcons: Record<string, string> = {
   Newest: '🆕',
   Trending: '🔥',
@@ -53,6 +45,16 @@ export function Navbar({ meta, collapsed, onToggle }: NavbarProps) {
   const i18nEnabled = themeConfig?.features?.i18n ?? false
   const themeEnabled = themeConfig?.features?.themeSwitch ?? false
   const homeHref = i18nEnabled ? `/${locale}` : '/'
+  const utilityLinks = React.useMemo(
+    () => [
+      { title: 'About Us', href: `/${locale}/about-us` },
+      { title: 'Contact Us', href: `/${locale}/contact-us` },
+      { title: 'DMCA', href: `/${locale}/dmca` },
+      { title: 'Privacy Policy', href: `/${locale}/privacy-policy` },
+      { title: 'Terms of Service', href: `/${locale}/terms-of-service` }
+    ],
+    [locale]
+  )
 
   const menuConfig = React.useMemo(() => {
     if (!meta) return {}

@@ -5,7 +5,7 @@ import { useRouter } from 'nextra/hooks'
 import { GameFrame } from '../components/GameFrame'
 import { CommentsSection } from '../components/CommentsSection'
 import { RightRailGames } from '../components/RightRailGames'
-import { getGamesByCategory } from '../utils/getGamesByCategory'
+import { getAllGamePages, getGamesByCategory } from '../utils/getGamesByCategory'
 import type { FrontMatter, ThemeConfig } from '../types'
 
 interface FeaturedLayoutProps {
@@ -96,10 +96,13 @@ export function FeaturedLayout({
   const homepageUrl = locale === 'zh' ? `${baseUrl}/zh` : locale === 'en' ? `${baseUrl}/en` : baseUrl
 
   const categories = frontMatter.categories || []
-  const categoryGames = React.useMemo(
-    () => categories.flatMap((category) => getGamesByCategory(pageMap, category, locale).slice(0, 12)),
-    [categories, locale, pageMap]
-  )
+  const categoryGames = React.useMemo(() => {
+    if (isHomepage) {
+      return getAllGamePages(pageMap, locale).slice(0, 12)
+    }
+
+    return categories.flatMap((category) => getGamesByCategory(pageMap, category, locale).slice(0, 12))
+  }, [categories, isHomepage, locale, pageMap])
 
   const uniqueGames = React.useMemo(() => {
     const seen = new Set<string>()
@@ -168,25 +171,23 @@ export function FeaturedLayout({
               <AdSlot image={frontMatter.bottomAdImage} href={frontMatter.bottomAdHref} />
             )}
 
-            <div className="overflow-hidden rounded-[14px] bg-[#171824] shadow-[0_12px_36px_rgba(0,0,0,0.25)] ring-1 ring-[#26283b]">
+            <div className="overflow-hidden rounded-[14px] bg-[#151622] shadow-[0_10px_28px_rgba(0,0,0,0.22)] ring-1 ring-[#26283b]">
               <div
                 className={`relative overflow-hidden transition-[max-height] duration-500 ${
                   expanded ? 'max-h-[4000px]' : 'max-h-[720px]'
                 }`}
               >
-                <div className="space-y-5 px-5 pb-5 pt-5">
-                  <div className="rounded-[14px] bg-[#13141f] p-5 ring-1 ring-[#24263a]">
-                    {frontMatter.description && (
-                      <p className="mb-5 text-base leading-7 text-[#aab0da]">
-                        {frontMatter.description}
-                      </p>
-                    )}
-                    <article className="prose max-w-none dark:prose-invert">{children}</article>
-                  </div>
+                <div className="space-y-5 px-5 pb-4 pt-5">
+                  {frontMatter.description && (
+                    <p className="text-[15px] leading-7 text-[#aab0da]">
+                      {frontMatter.description}
+                    </p>
+                  )}
+                  <article className="prose max-w-none dark:prose-invert">{children}</article>
                 </div>
 
                 {!expanded && (
-                  <div className="pointer-events-none absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-[#171824] via-[#171824]/96 to-transparent" />
+                  <div className="pointer-events-none absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-[#151622] via-[#151622]/96 to-transparent" />
                 )}
               </div>
 
@@ -208,7 +209,7 @@ export function FeaturedLayout({
                 </button>
               </div>
 
-              <div className="px-5 pb-5">
+              <div className="border-t border-[#282a3d] px-5 pb-5 pt-4">
                 <CommentsSection title="Homepage Comments" />
               </div>
             </div>
