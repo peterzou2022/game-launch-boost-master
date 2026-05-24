@@ -35,6 +35,11 @@ export default {
         icon: "material-symbols:local-fire-department",
         href: "/en/drift-rush",
       },
+      buildToClimb: {
+        title: "Build to Climb",
+        icon: "material-symbols:deployed-code-history",
+        href: "/en/build-to-climb",
+      },
     },
   },
 };
